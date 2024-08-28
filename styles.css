@@ -1,0 +1,138 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 0px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+}
+
+a{
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    font-size: 15px;
+}
+
+.a-About{
+    margin-right: 45px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 170px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Ensure items are centered within the nav */
+    height: 53px; /* This should match the height or line height of the H1 to align vertically */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    line-height: 53px; /* Match this line height to align with H1 text */
+    display: flex;
+    align-items: center;
+}
+
+
+.hero {
+    padding: 160px 20px;
+    background-color: #f9f9f9;
+    overflow: hidden; 
+}
+
+.hero h1, .hero h5, .button-container {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-family: "Geist SemiBold", "Geist SemiBold Placeholder", sans-serif;
+    font-size: 53.45px;
+    font-weight: bolder;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+    color: rgb(51, 51, 51);
+    margin-top: 0.5px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    animation-delay: 0.5s; 
+}
+
+.hero h5 {
+    font-size: 18px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #666;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    animation-delay: 1s;
+}
+
+.button-container {
+    animation-delay: 1.5s;
+}
+
+.button-style {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0.7px 0.7px -0.6px,
+                rgba(0, 0, 0, 0.145) 0px 1.8px 1.8px -1.25px,
+                rgba(0, 0, 0, 0.137) 0px 3.6px 3.6px -1.9px,
+                rgba(0, 0, 0, 0.125) 0px 6.9px 6.9px -2.5px,
+                rgba(0, 0, 0, 0.106) 0px 13.6px 13.6px -3.1px,
+                rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-style:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px -0.6px,
+                rgba(0, 0, 0, 0.145) 0px 2px 2px -1.25px,
+                rgba(0, 0, 0, 0.137) 0px 4px 4px -2px,
+                rgba(0, 0, 0, 0.125) 0px 8px 8px -2.5px,
+                rgba(0, 0, 0, 0.106) 0px 14px 14px -3.5px,
+                rgba(0, 0, 0, 0.05) 0px 31px 31px -4px;
+}
