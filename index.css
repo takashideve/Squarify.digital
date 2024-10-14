@@ -68,7 +68,7 @@
     font-weight: bold;
     letter-spacing: -0.8px;
     line-height: 1.2;
-    color: #ffffff;
+    color: aliceblue;
     margin-top: 130px;
     margin-bottom: 20px;
     max-width: 800px;
@@ -110,35 +110,31 @@
     }
 }
 
-.hero-2 h1{
+.hero-2 h2{
     font-family: 'Inter', sans-serif;
+    font-size: 35px;
     font-weight: bold;
-    color: #ffffff;
-    font-size: 38px;
-    position: absolute;
-    margin-top: 230px;
-    margin-left: 550px;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+    color: aliceblue;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.book-call-button {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    padding: 12px 21px;
-    background-color: floralwhite;
-    color: black !important;
-    text-decoration: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: padding-right 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-in-out forwards;
 }
 
 .book-call-button-2 {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: aliceblue;
+    position: absolute;
+    right: 790px;
     color: #000;
     text-decoration: none;
     border-radius: 20px;
@@ -156,6 +152,7 @@
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 20px;
     border: 1px solid #000;
     opacity: 0;
     transform: translateY(30px);
@@ -165,8 +162,19 @@
 .button:hover{
     background-color: #1a1a1a;
     border-radius: 20px;
+    padding: 10px 20px;
 }
 
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media screen and (max-width: 990px){
     .right-svg{
@@ -181,34 +189,15 @@
     .hero h5{
         font-size: 13px;
     }
-}
-
-@keyframes fadeInSlideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
+    .book-call-button-2{
+        right: 250px;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+    .button{
+        padding-top: 1px;
+        right: 100px;
     }
-}   
-
-
-.book-call-button .book-call-button-2::after {
-    content: '→';
-    opacity: 1;
-    margin-left: 0px;
-    transition: opacity 0.3s, margin-left 0.3s ease-in-out;
-}
-
-
-.book-call-button .book-call-button-2:hover {
-    padding-left: 28px; 
-}
-
-
-.book-call-button .book-call-button-2:hover::after {
-    opacity: 1;
-    margin-left: 10px;
+    .button:hover{
+        background-color: transparent;
+        outline: none;
+    }
 }
