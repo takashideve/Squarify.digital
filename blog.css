@@ -1,0 +1,131 @@
+body{
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.Main-Header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 25px;
+    background-color: #000000;
+    position: relative;
+}
+
+.Squarify-Logo{
+    left: 100px;
+    position: absolute;
+    top: 17.5px;
+    z-index: 2;
+}
+
+.nav-links {
+    list-style-type: none;
+    border-radius: 100px;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 1px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ababab;
+    font-family: 'Inter', sans-serif;
+    font-weight: 470;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+.link:hover{
+    background-color: #1a1a1a;
+    color: aliceblue;
+}
+
+.hero h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    color: floralwhite;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.book-call-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: 200px;
+    padding: 12px 21px;
+    background-color: floralwhite;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center; 
+    transition: padding-right 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.book-call-button-2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: 680px;
+    padding: 20px 35px;
+    background-color: floralwhite;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+.book-call-button .book-call-button-2::after {
+    content: '→';
+    opacity: 1;
+    margin-left: 0px;
+    transition: opacity 0.3s, margin-left 0.3s ease-in-out;
+}
+
+
+.book-call-button .book-call-button-2:hover {
+    padding-left: 28px; 
+}
+
+
+.book-call-button .book-call-button-2:hover::after {
+    opacity: 1;
+    margin-left: 10px;
+}
