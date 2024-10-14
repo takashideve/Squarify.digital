@@ -1,0 +1,214 @@
+.right-svg {
+    position: absolute;
+    pointer-events: none;
+    right: -70px;
+    top: 3%;
+    z-index: -1;
+    transform: translateY(-50%) rotate(-90deg);
+    animation: slideInRight 1.4s linear forwards, rotateLeftToRight 2s linear forwards;
+}
+
+.left-svg {
+    position: absolute;
+    pointer-events: none;
+    left: -100px;
+    top: 13%;
+    z-index: -1;
+    transform: translateY(-10%) rotate(90deg);
+    animation: slideInLeft 1.4s linear forwards, rotateRightToLeft 2s linear forwards;
+}
+
+
+@keyframes rotateRightToLeft {
+    0% {
+        opacity: 0.001;
+        transform: perspective(1200px) translateX(0px) translateY(-24px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0); /* Start from -90 degrees */
+    }
+    100% {
+        opacity: 1;
+        transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg);
+    }
+}
+
+
+@keyframes rotateLeftToRight{
+    0% {
+        opacity: 0.001;
+        transform: perspective(1200px) translateX(0px) translateY(-24px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0); /* Start from -90 degrees */
+    }
+    100% {
+        opacity: 1;
+        transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg);
+    }
+}
+
+
+@keyframes slideInLeft {
+    from {
+        left: -110px;
+    }
+    to {
+        left: 1px;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        right: -410px;
+    }
+    to {
+        right: 1px;
+    }
+}
+
+
+.hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 51px;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
+
+.hero h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 420;
+    letter-spacing: -0.8px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #ADADAD;
+    line-height: 1.5;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-in-out forwards ;
+}
+
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-2 h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 38px;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 550px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.book-call-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding: 12px 21px;
+    background-color: floralwhite;
+    color: black !important;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: padding-right 0.3s ease-in-out;
+}
+
+.book-call-button-2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+.button{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: 630px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+.button:hover{
+    background-color: #1a1a1a;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 990px){
+    .right-svg{
+        display: none;
+    }
+    .left-svg{
+        display: none;
+    }
+    .hero h1{
+        font-size: 25.5px;
+    }
+    .hero h5{
+        font-size: 13px;
+    }
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}   
+
+
+.book-call-button .book-call-button-2::after {
+    content: '→';
+    opacity: 1;
+    margin-left: 0px;
+    transition: opacity 0.3s, margin-left 0.3s ease-in-out;
+}
+
+
+.book-call-button .book-call-button-2:hover {
+    padding-left: 28px; 
+}
+
+
+.book-call-button .book-call-button-2:hover::after {
+    opacity: 1;
+    margin-left: 10px;
+}
