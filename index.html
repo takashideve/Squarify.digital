@@ -3,33 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squarify</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta content="" name="description"/> <!-- SEO -->
+    <meta content="Squarify - Building the next generation of software" property="og:title" />
+    <meta content="We empower non-tech founders to transform their ideas into reality with high-quality, scalable web apps that make a significant impact in their fields" property="og:description" />
+    <meta content="" property="og:image"/> <!-- Open Graph Protocol -->
+    <meta property="og:type" content="website"/>
+    <title>Squarify | Builds the next generation of no-code software</title>
+    <script src="general.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Inter:500,700"]
+            }
+        });
+    </script>
+    <meta name="google-site-verification" content="WWcNaHg6VvmsSc4wFEbdfNcflj0hRQVlfCPiq4PR7iQ" />
+    <!-- Scripts for user Interaction Analytics & reporting Plan -->
 </head>
 <body>
     <header>
-        <div class="logo">Squarify</div>
-        <nav>
-            <ul>
-                <li><a href="#">Our work</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a class="a-About" href="#">About</a></li>
-                
-            </ul>
-        </nav>
+        <a href="index.html" class="Logo"><img src="Squarify.svg" alt="Squarify-Logo"></a>
+            <div class="desktop-menu">
+                <a href="index.html"><img src="Squarify.svg" alt="Squarify-Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="#" class="link">Our work</a></li> <!-- link -->
+                    <li><a href="#" class="link">Pricing</a></li> <!-- link -->
+                    <li><a href="#" class="link">About</a></li> <!-- link -->
+                    <li><a href="blog.html" class="link">Blog</a></li>
+                    <li><a href="#" class="link">Contact us</a></li> <!-- link -->
+                </ul>
+                <a href="call.html" class="get-started-desktop">Get in Touch</a>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#">Our work</a> <!-- link -->
+                <a href="#">Pricing</a> <!-- link -->
+                <a href="#">About</a> <!-- link -->
+                <a href="blog.html">Blog</a>
+                <a href="#">Contact us</a> <!-- link -->
+                <a href="call.html" class="get-started">Get in Touch</a> 
+            </div>
+
+            <div class="container" onclick="toggleMenu()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div>
-                <h1>Squarify is building the next generation of software solutions in the founder support space.</h1>
-                <h5>Empowering businesses with innovative no-code solutions for streamlined success.</h5>
-            </div>
-            <div class="button-container">
-                <a class="button-style" href="#">Contact us</a>
-            </div>
-        </section>
-    </main>
+
+    <div class="hero">
+        <img src="right.svg" alt="right SVG" class="right-svg">
+        <img src="left.svg" alt="Left SVG" class="left-svg">
+        <h1>Squarify builds the next generation of no-code software</h1>
+        <h5>We empower non-tech founders to transform their ideas into reality with high-quality, scalable web apps that significantly impact their fields.</h5>
+    </div>
+
+    <div>
+        <a class="book-call-button-2" href="call.html">Get in Touch</a>
+        <a class="button" href="#">Our Pricing</a>
+    </div>
+
+    <div class="hero-2">
+        <h1>Look Beyond Limits.</h1>
+        <h5></h5>
+    </div>
+
+
+
+
+
+
+<!-- Write fazet el 10X faster w no-code w traditional code etc... -->
+<!-- We build products that speak louder than words. -->
+
+
 </body>
 </html>
