@@ -15,7 +15,6 @@
     align-items: center;
     padding: 10px 20px;
     background-color: #000;
-    border-bottom: 0.111111px solid white;
   }
 
   .desktop-menu a {
@@ -49,12 +48,20 @@
   }
 
   .nav-links {
-    list-style-type: none;
-    border-radius: 100px;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    gap: 1px;
+    display: flex;
+    background-color: black;
+    padding: 12px 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px white;
+}
+
+.nav-links a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: 470;
 }
 
 .nav-links li {
@@ -64,12 +71,8 @@
 .nav-links a {
   text-decoration: none;
   color: #ababab;
-  font-family: 'Inter', sans-serif;
   font-weight: 470;
-  font-size: 17px;
-  text-decoration: none;
   border-radius: 20px;
-  padding: 10px 20px;
   border: 1px solid #000;
 }
 
