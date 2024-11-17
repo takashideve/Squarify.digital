@@ -2,9 +2,42 @@
   box-sizing: border-box;
 }
 
+*::selection{
+  background-color: brown;
+}
+
+.first-body{
+  padding-top: 7.5rem;
+  padding-bottom: 8rem;
+}
+
+.thecontainer{
+  display: none; /*check asap*/
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(6, 5, 8, 0.7);
+  backdrop-filter: blur(1em);
+}
+
+.body-text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
 body {
   background-color: #121212;
   line-height: 150%;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(6, 5, 8, 0.7);
+  backdrop-filter: blur(1em);
 }
 
 .desktop-menu {
@@ -34,10 +67,27 @@ body {
   display: inline-block;
 }
 
+.get-started-desktop:hover{
+  padding-right: 20px;
+  background-color: #f5c645;
+}
+
+.get-started-desktop svg {
+    width: 0;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.get-started-desktop:hover svg{
+    width: 12px;
+    opacity: 1;
+    transform: none;
+}
+
 .get-started-desktop {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  background: floralwhite;
+  background: #faf7e1;
   color: black !important;
   border-radius: 1000px;
   padding: 10px 20px;
@@ -45,10 +95,6 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: 0;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-  transform: none;
-  transform-origin: 50% 50% 0px;
 }
 
 .mobile-Logo{
@@ -116,19 +162,19 @@ nav{
 
 .nav-link:hover{
   background-color: #1a1a1a;
-  color: aliceblue;
+  color: #faf7e1;
 }
 
 .w-nav-link{
-  font-family: 'aquire', sans-serif;
+  font-family: 'inter bold', sans-serif;
   vertical-align: top;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
   position: relative;
-  color: white;
-  font-size: 15px;
+  color: #faf7e1;
+  font-size: 16.5px;
   text-decoration: none;
 }
 
@@ -155,9 +201,12 @@ nav{
   display: none;
   flex-direction: column;
   position: absolute;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   top: 60px;
   right: 0;
-  background-color: #121212;
+  background-color: rgba(6, 5, 8, 0.7);
+  backdrop-filter: blur(1em);
   width: 100%;
   z-index: 1;
 }
@@ -167,7 +216,7 @@ nav{
 }
 
 .mobile-menu a {
-  color: floralwhite;
+  color: #faf7e1;
   border-radius: 50px;
   padding: 6px 12px;
   font-size: 15px;
@@ -181,11 +230,15 @@ nav{
 }
 
 .get-started {
-  background: floralwhite;
+  background: #faf7e1;
   color: black !important;
   display: flex;
   margin-top: 20px;
   justify-content: center;
+}
+
+.get-started:hover{
+  background-color: #f5c645 !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -197,5 +250,8 @@ nav{
   }
   .desktop-menu {
     display: none;
+  }
+  .thecontainer{
+    display: flex;
   }
 }
