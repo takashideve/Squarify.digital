@@ -16,3 +16,13 @@ function toggleMenu() {
     }
   }
 });
+
+window.onload = function() {
+  document.getElementById("year").textContent = new Date().getFullYear();
+};
+
+luxy.init({
+  wrapper: '.wrapper',
+  targets: '.target',
+  wrapperSpeed: 0.08,
+});
