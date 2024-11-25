@@ -406,13 +406,23 @@
 
 
             <script defer type="text/javascript">
-                var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
-                    if (!isMobile) {
-                        luxy.init({
-                        wrapper: '#luxy',
-                        wrapperSpeed: 0.065,
-                    });
-                }
+document.addEventListener("DOMContentLoaded", () => {
+    const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+
+    if (!isMobile) {
+        // Initialize Luxy for non-mobile devices
+        luxy.init({
+            wrapper: '#luxy',
+            wrapperSpeed: 0.065,
+        });
+    } else {
+        // Optional: Destroy Luxy if initialized earlier (e.g., cached script issues)
+        if (typeof luxy !== "undefined" && typeof luxy.destroy === "function") {
+            luxy.destroy();
+        }
+    }
+});
+
 
                 window.addEventListener("load", function () {
                     const hash = window.location.hash;
