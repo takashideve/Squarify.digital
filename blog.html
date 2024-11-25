@@ -3,48 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="" name="description"/> <!-- SEO -->
-    <meta content="Squarify's Blog | Learn about the industry of No-code and Low-code" property="og:title"/>
-    <meta content="" property="og:description"/> <!-- SEO  -->
-    <meta content="" property="og:image"/> <!-- Open Graph Protocol for social media Like twitter, Instagram...-->
-    <meta property="og:type" content="article"/>
-    <title>Squarify's Blog | Learn about the industry of No-code and Low-code</title>
-    <script src="function.js"></script>
+    <title>Squarify Digital - Learn about the industry of No-code & Low-code.</title>
+    <meta name="title" content="Blog - Squarify Digital" />
+    <meta name="description" content="Get the inside scoop on the trend of no-code/low-code development." />
+    <meta property="og:title" content="Blog - Squarify Digital" />
+    <meta property="og:description" content="Get the inside scoop on the trend of no-code/low-code development." />
+    <meta property="og:image" content="https://github.com/takashideve/Squarify.digital/blob/main/images/1200x630.png" />
+    <meta property="og:url" rel="canonical" content="https://www.squarify.digital/blog" />
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog - Squarify Digital" />
+    <meta name="twitter:description" content="Get the inside scoop on the trend of no-code/low-code development." />
+    <meta name="twitter:image" content="https://github.com/takashideve/Squarify.digital/blob/main/images/1200x630.png" />
+    <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+    <script src="general.js" defer></script>
     <link rel="stylesheet" type="text/css" href="blog.css">
     <link rel="stylesheet" type="text/css" href="general.css">
-    <script type="text/javascript">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link href="images/Squarify-favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="images/Squarify-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer type="text/javascript">
         WebFont.load({
             google: {
                 families: ["Inter:500,700"]
             }
         });
     </script>
-    <!-- Scripts for user Interaction Analytics & reporting Plan -->
+    <meta name="google-site-verification" content="WWcNaHg6VvmsSc4wFEbdfNcflj0hRQVlfCPiq4PR7iQ" />
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTY9N4Q1C9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WTY9N4Q1C9');
+    </script>
+    <!-- End of Google Tag -->
 </head>
 <body>
     <header>
-        <div class="header">
-                <a href="https://www.squarify.digital" class="Squarify-Logo"><img src="Squarify.svg" alt="Squarify-Agency-Logo"></a>
-            <ul class="nav-links">
-                <li><a href="#" class="link">Our work</a></li>
-                <li><a href="#" class="link">Pricing</a></li>
-                <li><a href="#" class="link">About</a></li>
-                <li><a href="blog.html" class="link">Blog</a></li>
-                <li><a href="#" class="link">Contact us</a></li>
-            </ul>   
-            <a class="book-call-button" href="call.html">Book a Call</a>
-        </div>
+        <a href="https://www.squarify.digital" class="mobile-Logo"><img src="images/Squarify-agent.svg" alt="Squarify SaaS Agency"></a>
+            <div class="desktop-menu">
+                <a href="https://www.squarify.digital" class="Desktop-Logo position"><img src="images/Squarify-agent.svg" alt="Squarify SaaS Agency"></a>
+                <nav class="nav-menu w-nav-menu">
+                    <a href="https://www.squarify.digital/our-work" class="nav-link w-nav-link">Our work</a>
+                    <a href="https://www.squarify.digital/#pricing" class="nav-link w-nav-link">Pricing</a>
+                    <a href="https://www.squarify.digital/about-us" class="nav-link w-nav-link">About</a>
+                    <a href="https://www.squarify.digital/blog" class="nav-link w-nav-link">Blog</a>
+                    <a href="https://www.squarify.digital/call" class="nav-link w-nav-link">Contact us</a>
+                </nav>
+                <div class="desktop-button">
+                    <a href="https://www.squarify.digital/call" class="get-started-desktop btn">Get in Touch
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></a>
+                </div>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="https://www.squarify.digital/our-work">Our work</a>
+                <a href="https://www.squarify.digital/#pricing">Pricing</a>
+                <a href="https://www.squarify.digital/about-us">About</a>
+                <a href="https://www.squarify.digital/blog">Blog</a>
+                <a href="https://www.squarify.digital/call">Contact us</a>
+                <a href="https://www.squarify.digital/call" class="get-started">Get in Touch</a>
+            </div>
+
+            <div class="container" onclick="toggleMenu()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
     </header>
+<div id="luxy">
+<div class="wrapper">
+    <div class="first-body">
+        <div class="body-text">
+            <div class="heros">
+                <h1 class="hero_1">Get the inside scoop on the trend of no-code development.</h1>
+                <div class="hero-buttons">
+                    <a class="cta specs w-inline-block" href="https://www.squarify.digital/call">Get in Touch
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <a href="https://www.squarify.digital/post/Why-AI-and-no-code-is-the-future" class="blog-card">
+            <img src="post-img/AI in business.png" alt="Why AI & No-Code is the Future">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 10, 2024 • 5-min read</div>
+                <h2 class="blog-title">Why AI & No-Code is the Future</h2>
+                <p class="blog-excerpt">Discover how AI and no-code are transforming businesses and the future possibilities it holds.</p>
+            </div>
+        </a>
 
-    <div class="hero">
-        <h1>Get the inside scoop on trends and tips from the industry's leading edge in no-code.</h1>
+        <!-- Blog Post 2 -->
+        <a href="https://www.squarify.digital/post/Why-no-code-is-the-next-big-thing" class="blog-card">
+            <img src="post-img/why no-code is the next big thing.png" alt="Why no-code is the next big thing">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 12, 2024 • 5-min read</div>
+                <h2 class="blog-title">Why no-code is the next big thing</h2>
+                <p class="blog-excerpt">Learn how no-code platforms are empowering creators without coding experience.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 3 -->
+        <a href="https://www.squarify.digital/post/Importance-of-User-Experience-in-Web-Design" class="blog-card">
+            <img src="post-img/UX.png" alt="Importance of User Experience in Web Design">
+            <div class="blog-content">
+                <div class="blog-tag">DESIGN</div>
+                <div class="blog-meta">November 15, 2024 • 5-min read</div>
+                <h2 class="blog-title">Importance of User Experience in Web Design</h2>
+                <p class="blog-excerpt">Understand the role of UX design in creating impactful digital experiences.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 4 -->
+        <a href="https://www.squarify.digital/post/How-Strabo-launched-their-startup-with-no-code" class="blog-card">
+            <img src="post-img/Strabo Logo.png" alt="How Strabo launched their startup with no-code" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">INNOVATION</div>
+                <div class="blog-meta">November 16, 2024 • 5-min read</div>
+                <h2 class="blog-title">How Strabo launched their startup with no-code</h2>
+                <p class="blog-excerpt">Strabo is a startup that took a unique approach to launch its financial tracking platform by using no-code tools.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 5 -->
+        <a href="https://www.squarify.digital/post/BubbleCon-2024-Update" class="blog-card">
+            <img src="post-img/Bubblecon24.png" alt="BubbleCon 2024: Update" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">UPDATE</div>
+                <div class="blog-meta">November 16, 2024 • 6-min read</div>
+                <h2 class="blog-title">BubbleCon 2024: Update</h2>
+                <p class="blog-excerpt">BubbleCon 2024 brought together no-code experts, innovators, and industry leaders...</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 6 -->
+        <a href="https://www.squarify.digital/post/Bubble-vs-Webflow" class="blog-card">
+            <img src="post-img/Bubble vs Webflow.png" alt="Bubble vs Webflow: Which is Best for Your Business?" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 16, 2024 • 5-min read</div>
+                <h2 class="blog-title">Bubble vs Webflow: Which is Best for Your Business?</h2>
+                <p class="blog-excerpt">When it comes to no-code platforms, two major tools come to mind: Bubble and Webflow. Both are powerful but serve different purposes.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 7 -->
+        <a href="https://www.squarify.digital/post/How-a-No-Code-Agency-can-empower-your-startup-idea" class="blog-card">
+            <img src="post-img/Squarify Logo.png" alt="How a No-Code Agency can empower your startup idea" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 17, 2024 • 5-min read</div>
+                <h2 class="blog-title">How a No-Code Agency can empower your startup idea</h2>
+                <p class="blog-excerpt">Starting a new business requires a lot of effort, but one of the biggest challenges is often turning your idea into a functional product.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 8 -->
+        <a href="https://www.squarify.digital/post/How-no-Code-will-take-over-Software-Industry-in-2025" class="blog-card">
+            <img src="post-img/2030.png" alt="How no-Code will take over Software Industry in 2025" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">TREND</div>
+                <div class="blog-meta">November 17, 2024 • 5-min read</div>
+                <h2 class="blog-title">How no-Code will take over Software Industry in 2025</h2>
+                <p class="blog-excerpt">The no-code revolution has been making waves, and by 2025, it's poised to transform the software industry in profound ways.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 9 -->
+        <a href="https://www.squarify.digital/post/Why-Startups-are-Turning-to-no-Code" class="blog-card">
+            <img src="post-img/Turning into no-code.png" alt="Why Startups are Turning to No-Code" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">INNOVATION</div>
+                <div class="blog-meta">November 18, 2024 • 5-min read</div>
+                <h2 class="blog-title">Why Startups are Turning to No-Code</h2>
+                <p class="blog-excerpt">The startup ecosystem is evolving rapidly, and one of the biggest shifts is the growing reliance on no-code tools.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 10 -->
+        <a href="https://www.squarify.digital/post/Build-with-Bubble" class="blog-card">
+            <img src="post-img/build with bubble.png" alt="Here's what you can Build with Bubble" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 18, 2024 • 5-min read</div>
+                <h2 class="blog-title">Here's what you can Build with Bubble</h2>
+                <p class="blog-excerpt">Whether you're an entrepreneur, a startup founder, or someone with a great idea but no technical expertise, Bubble makes it possible to turn your vision into reality.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 11 -->
+        <a href="https://www.squarify.digital/post/web-app-vs-website" class="blog-card">
+            <img src="post-img/web app vs website.png" alt="Web Apps vs. Websites: 7 Key Differences and Which Is Right For You" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">LEARNING</div>
+                <div class="blog-meta">October 19, 2024 • 5-min read</div>
+                <h2 class="blog-title">Web Apps vs. Websites: 7 Key Differences and Which Is Right For You</h2>
+                <p class="blog-excerpt">What is a web app and how is it different from a website? Learn 7 key differences between them and how to choose the right one for you.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 12 -->
+        <a href="https://www.squarify.digital/post/Top-5-Industries-Gaining-Attention-From-No-code" class="blog-card">
+            <img src="post-img/5-Industries.png" alt="Top 5 Industries Gaining Attention from No-code" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">INNOVATION</div>
+                <div class="blog-meta">November 20, 2024 • 5-min read</div>
+                <h2 class="blog-title">Top 5 Industries Gaining Attention from No-code</h2>
+                <p class="blog-excerpt">No-code development is revolutionizing industries by allowing businesses to create applications and solutions without requiring complex programming skills.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 13 -->
+        <a href="https://www.squarify.digital/post/eight-misconceptions-about-no-code-development" class="blog-card">
+            <img src="post-img/8-misconceptions.png" alt="8 Misconceptions About No-Code Development" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">TREND</div>
+                <div class="blog-meta">November 20, 2024 • 5-min read</div>
+                <h2 class="blog-title">8 Misconceptions About No-Code Development</h2>
+                <p class="blog-excerpt">No-code development is transforming the way we build digital products, but many still have misconceptions about its capabilities and limitations.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 14 -->
+        <a href="https://www.squarify.digital/post/build-a-marketplace-with-bubble" class="blog-card">
+            <img src="post-img/marketplace.png" alt="How to build a marketplace with bubble" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">LEARNING</div>
+                <div class="blog-meta">November 20, 2024 • 5-min read</div>
+                <h2 class="blog-title">How to build a marketplace with bubble</h2>
+                <p class="blog-excerpt">Building a marketplace can feel like a monumental task, especially if you're not a developer. But with Bubble, a powerful no-code platform, you can build a fully functional marketplace without code.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 15 -->
+        <a href="https://www.squarify.digital/post/build-your-internal-tool-with-bubble" class="blog-card">
+            <img src="post-img/internal tool.png" alt="Build your internal tool using bubble" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">LEARNING</div>
+                <div class="blog-meta">November 20, 2024 • 5-min read</div>
+                <h2 class="blog-title">Build your internal tool using bubble</h2>
+                <p class="blog-excerpt">The flexibility of Bubble makes it easy to create internal tools that work the way you want, rather than adapting to what's available in third-party solutions.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 16 -->
+        <a href="https://www.squarify.digital/post/How-to-launch-an-MVP-in-quick-steps" class="blog-card">
+            <img src="post-img/MVP dev.png" alt="How to launch an MVP in quick steps" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 22, 2024 • 5-min read</div>
+                <h2 class="blog-title">How to launch an MVP in quick steps</h2>
+                <p class="blog-excerpt">Launching a Minimum Viable Product (MVP) is a great way to test your idea with real users and gather feedback quickly without spending too much time or money.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 17 -->
+        <a href="https://www.squarify.digital/post/build-a-mobile-app-native-with-bubble" class="blog-card">
+            <img src="post-img/build mobile app.png" alt="How to build a mobile app using native bubble in 2025" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">GUIDE</div>
+                <div class="blog-meta">November 23, 2024 • 5-min read</div>
+                <h2 class="blog-title">How to build a mobile app using native bubble in 2025</h2>
+                <p class="blog-excerpt">Since Bubble's groundbreaking announcements at BubbleCon, the no-code landscape for mobile app development has transformed dramatically.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 18 -->
+        <a href="https://www.squarify.digital/post/non-technical-build-with-bubble" class="blog-card">
+            <img src="post-img/technical build.png" alt="BDo I have to be technical to build with Bubble?" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">LEARNING</div>
+                <div class="blog-meta">November 24, 2024 • 5-min read</div>
+                <h2 class="blog-title">Do I have to be technical to build with Bubble?</h2>
+                <p class="blog-excerpt">No-code tools like Bubble have made it possible for anyone with an idea to bring a product to life, but do you need technical skills to use it effectively?</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 19 -->
+        <a href="https://www.squarify.digital/post/How-to-leverage-AI-in-your-no-code-app" class="blog-card">
+            <img src="post-img/Leveraging Ai into your business.png" alt="How to leverage AI in your no-code app" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">DEVELOPMENT</div>
+                <div class="blog-meta">November 25, 2024 • 5-min read</div>
+                <h2 class="blog-title">How to leverage AI in your no-code app</h2>
+                <p class="blog-excerpt">Integrating Artificial Intelligence (AI) into no-code applications can significantly elevate user experience, automate processes, and enable powerful data insights.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 20 -->
+        <a href="https://www.squarify.digital/post/How-to-Create-a-Product-Roadmap-for-Startups" class="blog-card">
+            <img src="post-img/product roadmap.png" alt="How to Create a Product Roadmap for Startups (And Why They Matter)" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">GUIDE</div>
+                <div class="blog-meta">November 26, 2024 • 5-min read</div>
+                <h2 class="blog-title">How to Create a Product Roadmap for Startups (And Why They Matter)</h2>
+                <p class="blog-excerpt">Learn why a product roadmap can make a big difference for your startup, and how to create an effective one.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 21 -->
+        <a href="https://www.squarify.digital/post/concept-to-product" class="blog-card">
+            <img src="post-img/5 steps.png" alt="From concept to product 10x faster: Here are 5 steps" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">GUIDE</div>
+                <div class="blog-meta">November 27, 2024 • 5-min read</div>
+                <h2 class="blog-title">From concept to product 10x faster: Here are 5 steps</h2>
+                <p class="blog-excerpt">Accelerate your journey from concept to market with no-code tools. Build smarter, launch quicker, and achieve more without the traditional development barriers.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 22 -->
+        <a href="https://www.squarify.digital/post/web-app-dev-in-10-days" class="blog-card">
+            <img src="post-img/10 days dev.png" alt="A 2024 Guide to Web App Development in 10 Days" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">LEARNING</div>
+                <div class="blog-meta">November 28, 2024 • 5-min read</div>
+                <h2 class="blog-title">A 2024 Guide to Web App Development in 10 Days</h2>
+                <p class="blog-excerpt">This simple, 10-day guide will get you started with web app development using Bubble's no-code editor.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 23 -->
+        <a href="https://www.squarify.digital/post/BubbleCon-2023-Update" class="blog-card">
+            <img src="post-img/BubbleCon23.jpg" alt="BubbleCon 2023: Update" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">UPDATE</div>
+                <div class="blog-meta">December 1, 2024 • 5-min read</div>
+                <h2 class="blog-title">BubbleCon 2023: Update</h2>
+                <p class="blog-excerpt">On October 25th, the co-founders of Bubble, Joshua Haas and Emmanuel Straschnov, led BubbleCon 2023, showcasing the impressive trajectory of Bubble and its future goals.</p>
+            </div>
+        </a>
+
+        <!-- Blog Post 24 -->
+        <a href="https://www.squarify.digital/post/no-code-vs-low-code" class="blog-card">
+            <img src="post-img/no-code vs low-code.png" alt="Low-code vs. no-code: Understanding the key differences and benefits" loading="lazy">
+            <div class="blog-content">
+                <div class="blog-tag">LEARNING</div>
+                <div class="blog-meta">December 2, 2024 • 5-min read</div>
+                <h2 class="blog-title">Low-code vs. no-code: Understanding the key differences and benefits</h2>
+                <p class="blog-excerpt">Understand the key differences between low-code and no-code platforms to choose the best solution for your needs.</p>
+            </div>
+        </a>
     </div>
 
-    <div>
-        <a class="book-call-button-2" href="call.html">Book A Call</a>
-    </div>
+    <footer class="footer">
+        <div class="footer__addr">
+          <div class="footer__logo">
+            <a href="#" onclick="window.location.reload(); return false;">
+              <img src="images/Squarify-agent.svg" width="50%" alt="Squarify SaaS Agency" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/company/squarify-digital/" target="_blank">
+                <img src="images/Linkedin.svg" width="10%" alt="Squarify SaaS agency Linkedin Social Link" loading="lazy">
+              </a>
+          </div>
+          
+          <address>
+            Made with &hearts; in Switzerland<br>
+            <a class="footer__btn" href="mailto:services@squarify.digital">services@squarify.digital</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Squarify</h2>
+      
+        <ul class="nav__ul">
+            <li><a href="https://www.squarify.digital/our-work">Our work</a></li>
+            <li><a href="https://www.squarify.digital/#pricing">Pricing</a></li>
+            <li><a href="https://www.squarify.digital/about-us">About</a></li>
+            <li><a href="https://www.squarify.digital/blog">Blog</a></li>
+            <li><a href="https://www.squarify.digital/call">Contact us</a></li>
+        </ul>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Approach for</h2>
+            <ul class="nav__ul">
+              <li><a href="https://squarify.digital/Approach/entrepreneurs">Entrepreneurs</a></li>
+              <li><a href="https://squarify.digital/Approach/early-startups">Early Startups</a></li>
+              <li><a href="https://squarify.digital/Approach/companies">Companies</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Special</h2>
+            <ul class="nav__ul">
+                <li><a href="https://squarify.digital/Special/Prototyping">Prototyping</a></li>
+                <li><a href="https://squarify.digital/Special/Front-End-development">Front-End development</a></li>
+                <li><a href="https://squarify.digital/Special/MVP-development">MVP development</a></li>
+                <li><a href="https://squarify.digital/Special/Internal-tools">Internal tools</a></li>
+              </ul>
+          </li>
 
+          <li class="nav__item">
+            <h2 class="nav__title">Resources</h2>
+            <ul class="nav__ul">
+                <li><a href="https://squarify.digital/Resources/Tutorials">Tutorials</a></li>
+                <li><a href="https://squarify.digital/Resources/Guides">Guides</a></li>
+                <li><a href="https://squarify.digital/blog">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>Squarify Digital &copy; <span id="year"></span>. Accelerating companies with no-code solutions.</p>
+        </div>
+    </footer>
 
-
+    <script>
+        var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+        luxy.init({
+            wrapper: '#luxy',
+            wrapperSpeed: 0.065,
+        });
+    }
+    </script>
+</div>
+</div>
 </body>
 </html>
