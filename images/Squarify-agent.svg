@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6087.93 1124.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: AquireBold, Aquire;
+        font-size: 839.92px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 50px;
+      }
+
+      .cls-6 {
+        letter-spacing: .03em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="Calque_2-2" data-name="Calque 2">
+      <polygon class="cls-5" points="862.12 1097.26 1326.43 707.06 527.02 521.99 68.22 915.7 862.12 1097.26"/>
+      <polygon class="cls-5" points="874.56 604.93 1340.39 217.2 514.39 27.18 54.26 418.62 68.51 421.85 874.56 604.93"/>
+      <line class="cls-5" x1="862.12" y1="1097.26" x2="874.56" y2="604.93"/>
+      <line class="cls-5" x1="514.39" y1="27.18" x2="527.02" y2="521.99"/>
+    </g>
+    <text class="cls-1" transform="translate(1568.42 851.1)"><tspan x="0" y="0">SQ</tspan><tspan class="cls-2" x="1232.97" y="0">U</tspan><tspan class="cls-3" x="1752.04" y="0">A</tspan><tspan x="2452.53" y="0">R</tspan><tspan class="cls-6" x="3073.22" y="0">I</tspan><tspan class="cls-4" x="3302.5" y="0">FY</tspan></text>
+  </g>
+</svg>
