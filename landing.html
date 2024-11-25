@@ -48,7 +48,7 @@
 <body>
     <header>
             <div class="desktop-menu">
-                <a href="https://www.squarify.digital" class="Desktop-Logo position"><img src="images/Squarify-agent.svg" alt="Squarify SaaS Agency"></a>
+                <a href="https://www.squarify.digital" class="Desktop-Logo position"><img src="images/Squarify-agent.svg" alt="Squarify SaaS Agency" width="100%" height="100%"></a>
                     <nav class="nav-menu w-nav-menu">
                         <a href="https://www.squarify.digital/our-work" class="nav-link w-nav-link">Our work</a>
                         <a href="https://www.squarify.digital/#pricing" class="nav-link w-nav-link">Pricing</a>
@@ -74,7 +74,7 @@
             </div>
   
             <div class="container-background-blur">
-                <a href="https://www.squarify.digital" class="mobile-Logo"><img src="images/Squarify-agent.svg" alt="Squarify SaaS Agency"></a>
+                <a href="https://www.squarify.digital" class="mobile-Logo"><img src="images/Squarify-agent.svg" alt="Squarify SaaS Agency" width="100%" height="100%"></a>
                 <div class="container" onclick="toggleMenu()">
                     <div class="line line1"></div>
                     <div class="line line2"></div>
@@ -168,8 +168,8 @@
             </div>
 
 
-            <div class="pricing-table">
-                <div id="pricing" class="hero-2">
+            <div id="pricing" class="pricing-table">
+                <div class="hero-2">
                     <div class="tag pricing">Pricing</div>
                         <h2>Big results, small investment.</h2>
                         <h3>Simple bi-weekly pricing, no lock-in, cancel anytime.</h3>
@@ -308,12 +308,12 @@
 
         <div class="blog-container">
             <!-- Blog Post 1 -->
-            <a href="https://www.squarify.digital/post/Why-no-Code-is-the-next-big-thing" class="blog-card">
-                <img src="post-img/why no-code is the next big thing.png" alt="Why no-Code is the next big thing">
+            <a href="https://www.squarify.digital/post/Why-no-code-is-the-next-big-thing" class="blog-card">
+                <img src="post-img/why no-code is the next big thing.png" alt="Why no-code is the next big thing">
                 <div class="blog-content">
                     <div class="blog-tag">DEVELOPMENT</div>
                     <div class="blog-meta">November 12, 2024 • 5-min read</div>
-                    <h2 class="blog-title">Why no-Code is the next big thing</h2>
+                    <h2 class="blog-title">Why no-code is the next big thing</h2>
                     <p class="blog-excerpt">Learn how no-code platforms are empowering creators without coding experience.</p>
                 </div>
             </a>
@@ -406,23 +406,19 @@
 
 
             <script defer type="text/javascript">
-document.addEventListener("DOMContentLoaded", () => {
-    const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+                var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+                    if (!isMobile) {
+                        luxy.init({
+                        wrapper: '#luxy',
+                        wrapperSpeed: 0.065,
+                    });
+                }
 
-    if (!isMobile) {
-        // Initialize Luxy for non-mobile devices
-        luxy.init({
-            wrapper: '#luxy',
-            wrapperSpeed: 0.065,
-        });
-    } else {
-        // Optional: Destroy Luxy if initialized earlier (e.g., cached script issues)
-        if (typeof luxy !== "undefined" && typeof luxy.destroy === "function") {
-            luxy.destroy();
-        }
-    }
-});
-
+                luxy.init({
+                wrapper: '.wrapper',
+                targets: '.target',
+                wrapperSpeed: 0.08,
+                });
 
                 window.addEventListener("load", function () {
                     const hash = window.location.hash;
