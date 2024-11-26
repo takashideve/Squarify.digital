@@ -1,4 +1,4 @@
-/* Aquire Font*/
+/* Aquire */
 
 @font-face {
     font-family: 'Aquire';
@@ -15,38 +15,18 @@
 }
 
 @font-face {
-    font-family: 'Aquire Bold';
+    font-family: 'Aquire Bolder';
     src: url('fonts/AquireLight-YzE0o.otf') format('opentype');
-    font-weight: bold;
+    font-weight: bolder;
     font-style: normal;
 }
 
-/* orbitron Font*/
+/* audiowide */
 
 @font-face {
-    font-family: 'Orbitron Bolder';
-    src: url('fonts/Orbitron-Black.ttf') format('opentype');
-    font-weight: 900; 
+    font-family: 'Audiowide';
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Orbitron Bold';
-    src: url('fonts/Orbitron-Bold.ttf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Orbitron Medium';
-    src: url('fonts/Orbitron-Medium.ttf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Orbitron Regular';
-    src: url('fonts/Orbitron-Regular.ttf') format('opentype');
     font-weight: 400;
-    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/Audiowide-Regular.ttf') format('woff2');
 }
