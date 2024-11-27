@@ -61,6 +61,10 @@
     position: relative;
 }
 
+.first-text{
+    margin-top: 100px;
+}
+
 .blog-content {
     font-family: 'inter', sans-serif;
     color: #ebedf2;
