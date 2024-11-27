@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Aquire';
+    font-family: 'Aquire light';
     src: url('AquireLight.woff2') format('woff2'),
         url('AquireLight.woff') format('woff');
     font-weight: 300;
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    font-family: 'Aquire';
+    font-family: 'Aquire bold';
     src: url('AquireBold.woff2') format('woff2'),
         url('AquireBold.woff') format('woff');
     font-weight: bold;
