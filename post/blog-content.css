@@ -14,7 +14,7 @@
 }
 
 .hero_1{
-    font-family: 'aquire',sans-serif;
+    font-family: 'aquire bold',sans-serif;
     color: white;
     flex: 0 auto;
     width: auto;
@@ -71,6 +71,9 @@
     align-items: flex-start;
 }
 
+h2{
+    font-size: 32px;
+}
 p, h2{
     flex: 0 auto;
     width: auto;
@@ -79,8 +82,12 @@ p, h2{
 @media screen and (max-width: 991px){
     .hero_1{
         font-size: 30px;
+        letter-spacing: normal;
     }
-    p, h2{
+    h2{
+        font-size: 28px;
+    }
+    p{
         font-size: 16px;
     }
     .blog-position{
@@ -92,8 +99,12 @@ p, h2{
 @media screen and (max-width: 767px){
     .hero_1{
         font-size: 20px;
+        letter-spacing: normal;
     }
-    p, h2{
+    h2{
+        font-size: 18px;
+    }
+    p{
         font-size: 13px;
     }
     .blog-position{
@@ -103,7 +114,10 @@ p, h2{
 }
 
 @media screen and (max-width: 480px){
-    p, h2{
+    h2{
+        font-size: 18px;
+    }
+    p{
         font-size: 13px;
     }
     .blog-position{
@@ -114,14 +128,18 @@ p, h2{
 
 @media screen and (max-width: 440px){
     .hero_1{
-        font-size: 12px;
+        font-size: 15px;
         line-height: 35px;
+        letter-spacing: normal;
     }
-    p, h2{
-        font-size: 11px;
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
     }
     .blog-position{
-        margin-right: 70px;
-        margin-left: 100px;
+        margin-right: 40px;
+        margin-left: 70px;
     }
 }
