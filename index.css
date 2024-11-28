@@ -113,6 +113,46 @@
     border-radius: 1000px;
 }
 
+.bg-video>video {
+    object-fit: cover;
+    z-index: -100;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    inset: -100%;
+}
+
+.video-embed {
+    background-color: #121212;
+    width: 100%;
+    height: 814px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.main {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.bg-video {
+    color: #fff;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+video{
+    vertical-align: baseline;
+    display: inline-block;
+}
+
 .tag{
     font-family: "Inter", sans-serif;
     isolation: isolate;
@@ -525,6 +565,12 @@
     font-family: 'inter', sans-serif;
 }
 
+@media screen and (max-width: 1920px) {
+    .video-embed {
+        height: 814px;
+    }
+}
+
 @media screen and (max-width: 991px){
     .hero_1{
         font-size: 40px;
@@ -574,6 +620,14 @@
         width: 220px;
         height: 200px;
     }
+    .cta.specs{
+        padding: 7px 16px;
+        font-size: 16px;
+    }
+    .cta.empty{
+        padding: 7px 16px;
+        font-size: 16px;
+    }   
     .question-text{
         font-size: 15px;
     }
@@ -590,11 +644,11 @@
 
 @media screen and (max-width: 440px){
     .hero_1{
-        font-size: 20px;
+        font-size: 23px;
         line-height: 30px;
     }
     .hero_2{
-        font-size: 10px;
+        font-size: 13px;
         letter-spacing: -0px;
     }
     .hero-2 h2{
@@ -609,9 +663,15 @@
         padding: 6px 15px;
         font-size: 15px;
     }
-    .cta{
+    .cta.empty{
         padding: 6px 15px;
         font-size: 15px;
+    }
+    .video-embed {
+        z-index: 3;
+        border-radius: 8px;
+        height: 400px;
+        overflow: hidden;
     }
     .yellow-wrapper h1{
         font-size: 25px;
