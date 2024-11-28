@@ -3,14 +3,6 @@
     padding-bottom: 8rem;
 }
 
-.body-text {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-}
-
 .heros{
     grid-column-gap: 24px;
     grid-row-gap: 24px;
