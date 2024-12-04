@@ -340,15 +340,12 @@ nav{
   .footer__nav > * {
     flex: 1;
   }
-  
   .footer__addr {
     flex: 1 0px;
   }
-  
   .footer__nav {
     flex: 2 0px;
   }
-
   .social.footer__logo{
     width: 10px;
     cursor: pointer;
@@ -357,7 +354,6 @@ nav{
   .legal{
     margin-bottom: 0;
   }
-  
 }
 
 @media screen and (min-width: 440px) {
