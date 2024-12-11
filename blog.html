@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link href="images/Squarify-favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="images/Squarify-favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/AquireBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/AquireBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script defer type="text/javascript">
         WebFont.load({
             google: {
@@ -349,68 +348,81 @@
         </a>
     </div>
 
-    <footer class="footer">
-        <div class="footer__addr">
-          <div class="footer__logo">
-            <a href="#" onclick="window.location.reload(); return false;">
-              <img src="images/Squarify-agent.svg" width="50%" alt="Squarify SaaS Agency" loading="lazy">
-            </a>
-            <a href="https://www.linkedin.com/company/squarify-digital/" target="_blank">
-                <img src="images/Linkedin.svg" width="10%" alt="Squarify SaaS agency Linkedin Social Link" loading="lazy">
-              </a>
-          </div>
-          
-          <address>
-            Made with &hearts; in Switzerland<br>
-            <a class="footer__btn" href="mailto:services@squarify.digital">services@squarify.digital</a>
-          </address>
-        </div>
-        
-        <ul class="footer__nav">
-          <li class="nav__item">
-            <h2 class="nav__title">Squarify</h2>
-      
-        <ul class="nav__ul">
-            <li><a href="https://www.squarify.digital/our-work">Our work</a></li>
-            <li><a href="https://www.squarify.digital/#pricing">Pricing</a></li>
-            <li><a href="https://www.squarify.digital/about-us">About</a></li>
-            <li><a href="https://www.squarify.digital/blog">Blog</a></li>
-            <li><a href="https://www.squarify.digital/call">Contact us</a></li>
-        </ul>
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Approach for</h2>
-            <ul class="nav__ul">
-              <li><a href="https://squarify.digital/Approach/entrepreneurs">Entrepreneurs</a></li>
-              <li><a href="https://squarify.digital/Approach/early-startups">Early Startups</a></li>
-              <li><a href="https://squarify.digital/Approach/companies">Companies</a></li>
-            </ul>
-          </li>
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Special</h2>
-            <ul class="nav__ul">
-                <li><a href="https://squarify.digital/Special/Prototyping">Prototyping</a></li>
-                <li><a href="https://squarify.digital/Special/Front-End-development">Front-End development</a></li>
-                <li><a href="https://squarify.digital/Special/MVP-development">MVP development</a></li>
-                <li><a href="https://squarify.digital/Special/Internal-tools">Internal tools</a></li>
-              </ul>
-          </li>
+        <section class="pos">
+            <div class="cta yellow">
+                <h4>Looking to build your next project?</h4>
+                <a href="https://squarify.digital/call" class="last cta">Start Today</a>
+            </div>
+        </section>
 
-          <li class="nav__item">
-            <h2 class="nav__title">Resources</h2>
+        <footer class="footer">
+            <div class="footer__addr">
+              <div class="footer__logo">
+                <a href="#" onclick="window.location.reload(); return false;">
+                  <img src="images/Squarify-agent.svg" width="50%" alt="Squarify SaaS Agency" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/company/squarify-digital/" target="_blank">
+                    <img src="images/Linkedin.svg" width="9%" alt="Squarify SaaS agency Linkedin Social Link Profile" loading="lazy">
+                  </a>
+                <a href="https://x.com/AladdinMhir" target="_blank">
+                    <img src="images/Twitter.svg" width="8%" alt="Squarify SaaS agency X Social Link Profile" loading="lazy">
+                </a>
+                <a href="https://dribbble.com/squarifydigital" target="_blank">
+                    <img src="images/Dribble.svg" width="8%" alt="Squarify SaaS agency Dribble Social Link Profile" loading="lazy">
+                </a>
+              </div>
+              
+              <address>
+                Made with &hearts; in Switzerland<br>
+                <a class="footer__btn" href="mailto:services@squarify.digital">services@squarify.digital</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Squarify</h2>
+          
             <ul class="nav__ul">
-                <li><a href="https://squarify.digital/Resources/Tutorials">Tutorials</a></li>
-                <li><a href="https://squarify.digital/Resources/Guides">Guides</a></li>
-                <li><a href="https://squarify.digital/blog">Blog</a></li>
+                <li><a href="https://www.squarify.digital/our-work">Our work</a></li>
+                <li><a href="https://www.squarify.digital/#pricing">Pricing</a></li>
+                <li><a href="https://www.squarify.digital/about-us">About</a></li>
+                <li><a href="https://www.squarify.digital/blog">Blog</a></li>
+                <li><a href="https://www.squarify.digital/call">Contact us</a></li>
             </ul>
-          </li>
-        </ul>
-        
-        <div class="legal">
-          <p>Squarify Digital &copy; <span id="year"></span>. Accelerating companies with no-code solutions.</p>
-        </div>
-    </footer>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Approach for</h2>
+                <ul class="nav__ul">
+                  <li><a href="https://squarify.digital/Approach/entrepreneurs">Entrepreneurs</a></li>
+                  <li><a href="https://squarify.digital/Approach/early-startups">Early Startups</a></li>
+                  <li><a href="https://squarify.digital/Approach/companies">Companies</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Special</h2>
+                <ul class="nav__ul">
+                    <li><a href="https://squarify.digital/Special/Prototyping">Prototyping</a></li>
+                    <li><a href="https://squarify.digital/Special/Front-End-development">Front-End development</a></li>
+                    <li><a href="https://squarify.digital/Special/MVP-development">MVP development</a></li>
+                    <li><a href="https://squarify.digital/Special/Internal-tools">Internal tools</a></li>
+                  </ul>
+              </li>
+    
+              <li class="nav__item">
+                <h2 class="nav__title">Resources</h2>
+                <ul class="nav__ul">
+                    <li><a href="https://squarify.digital/Resources/Tutorials">Tutorials</a></li>
+                    <li><a href="https://squarify.digital/Resources/Guides">Guides</a></li>
+                    <li><a href="https://squarify.digital/blog">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>Squarify Digital &copy; <span id="year"></span>. Accelerating companies with no-code solutions.</p>
+            </div>
+        </footer>
 
 
     
