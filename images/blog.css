@@ -1,0 +1,238 @@
+.heros{
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-direction: column;
+    max-width: 840px;
+    display: flex;
+    position: relative;
+}
+
+.hero_1{
+    flex: 0 auto;
+    width: auto;
+    font-size: 40px;
+    color: #faf7e1 !important;
+    font-family: 'aquire bold', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 990px;
+    text-align: center;
+    line-height: 62px;
+    letter-spacing: -1px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
+
+.hero_2{
+    font-family: "Audiowide", sans-serif;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #faf7e1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-buttons{
+    grid-column-gap: 13px;
+    grid-row-gap: 13px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    display: flex;
+}
+
+.cta.specs{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background: #faf7e1;
+    color: black !important;
+    font-size: 18px;
+    border-radius: 1000px;
+    padding: 14px 26px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1.2s ease-out forwards;
+}
+
+.cta.specs:hover {
+    padding-right: 24px;
+    background-color: #f5c645;
+}
+
+.cta.specs svg {
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta.specs:hover svg{
+    width: 14px;
+    opacity: 1;
+    transform: none;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: #222;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-tag {
+    background-color: #555;
+    font-family: 'inter', sans-serif;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+    font-family: 'inter', sans-serif;
+}
+
+.blog-meta {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+    font-family: 'inter', sans-serif;
+}
+
+.blog-excerpt {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    font-family: 'inter', sans-serif;
+}
+
+.pos{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+  
+.cta.yellow{
+    background-color: #faf7e1;
+    border-radius: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1180px;
+    padding: 80px 64px;
+    display: flex;
+    margin: 0 auto;
+}
+  
+.cta.yellow h4{
+    font-family: 'aquire bold', sans-serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    line-height: 60px;
+}
+  
+.last.cta{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background: black;
+    color: #faf7e1 !important;
+    border-radius: 1000px;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cta.yellow h4 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .last.cta{
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+    .cta.yellow h4 {
+        font-size: 29px;
+        line-height: 36px;
+    }
+    .last.cta{
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero_1{
+        font-size: 35px;
+    }
+    .cta.specs{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .cta.yellow h4 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .last.cta{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
