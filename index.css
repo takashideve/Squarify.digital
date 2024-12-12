@@ -25,7 +25,7 @@
 
 .hero_2{
     font-family: 'inter', sans-serif;
-    font-size: 20px;
+    font-size: 21px;
     margin-top: 0;
     margin-bottom: 0;
     color: aliceblue;
@@ -226,7 +226,7 @@ video{
 }
 
 .hero-2 h3{
-    font-family: "Audiowide", sans-serif;
+    font-family: 'Audiowide', sans-serif;
     font-size: 23px;
     letter-spacing: 1.3px;
     color: aliceblue;
@@ -239,6 +239,49 @@ video{
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInSlideUp 1.2s ease-in-out forwards;
+}
+
+
+.hero-2 p{
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: aliceblue;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1.2s ease-in-out forwards;
+}
+
+
+.ctas{
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    border-top: 2px solid #ffffff29;
+    border-radius: 1000px;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 18px;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.ctas.dribble{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background: #f5c645;
+    color: black !important;
+    border-radius: 1000px;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 100;
 }
 
 .huge-container{
@@ -897,11 +940,14 @@ video{
         padding: 7px 16px;
         font-size: 16px;
     }
+    .ctas.dribble{
+        padding: 5px 15px;
+    }
     .question-text{
         font-size: 15px;
     }
     .faq-answer-content{
-        font-size: 11px;
+        font-size: 13px;
     }
     .blog-container {
         grid-template-columns: 1fr;
@@ -993,6 +1039,7 @@ video{
         flex-flow: column wrap;
         align-items: flex-start;
         font-size: 14px;
+        letter-spacing: -0.26px;
     }
     .table-item {
         grid-column-gap: 0px;
