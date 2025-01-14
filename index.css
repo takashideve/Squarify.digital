@@ -1236,7 +1236,7 @@ a {
 @media screen and (max-width: 670px){
     .pricing-cards {
         grid-column-gap: 8px;
-        grid-row-gap: 8px;
+        grid-row-gap: 15px;
         flex-wrap: wrap;
         position: static;
     }
@@ -1311,6 +1311,9 @@ a {
     .table-item.first {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+    }
+    .smol{
+        letter-spacing: -0.5;
     }
     div.table-item.first.mobile {
         border-bottom: 1px solid #3c3c3c;
