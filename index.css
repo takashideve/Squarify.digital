@@ -1282,6 +1282,9 @@ a {
     .features li {
         font-size: 0.8rem;
     }
+    .progress{
+        width: 300px;
+    }
     .yellow-wrapper h2{
         font-size: 27px;
         font-weight: bolder;
